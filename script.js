@@ -16,7 +16,7 @@ console.log(time[randomTime]);
 */
 
 const getMessage = () => {
-    return `You will travel to ${countries[randomCountry]} by ${travelMethod[randomTravel]} in ${time[randomTime]}`;
+    return `You will travel to ${countries[randomCountry]}. You will travel by ${travelMethod[randomTravel]} in ${time[randomTime]}`;
 }
 
 console.log(getMessage());
