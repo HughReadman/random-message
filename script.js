@@ -9,7 +9,14 @@ const random = (arr) => {
 const randomCountry= random(countries);
 const randomTravel = random(travelMethod);
 const randomTime = random(time);
-
+/* TESTING FOR RANDOM
 console.log(countries[randomCountry]);
 console.log(travelMethod[randomTravel]);
 console.log(time[randomTime]);
+*/
+
+const getMessage = () => {
+    return `You will travel to ${countries[randomCountry]} by ${travelMethod[randomTravel]} in ${time[randomTime]}`;
+}
+
+console.log(getMessage());
