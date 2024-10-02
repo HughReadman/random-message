@@ -1,0 +1,3 @@
+const countries = ["France", "Italy", "Spain", "Belgium", "Australia", "New Zealand", "USA", "Canada", "Thailand", "China", "Vietnam", "Egypt"];
+const travelMethod = ["Train", "Bus", "Car", "Taxi", "Moped", "Skateboard", "Bicycle", "Rollerblades", "Horseback", "Airplane", "Helicopter", "foot"];
+const time = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
