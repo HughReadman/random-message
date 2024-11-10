@@ -5,10 +5,6 @@ const time = ["January", "Febuary", "March", "April", "May", "June", "July", "Au
 const random = (arr) => {
     return (Math.floor(Math.random() * arr.length))
 }
-
-const randomCountry= random(countries);
-const randomTravel = random(travelMethod);
-const randomTime = random(time);
 /* TESTING FOR RANDOM
 console.log(countries[randomCountry]);
 console.log(travelMethod[randomTravel]);
@@ -16,7 +12,18 @@ console.log(time[randomTime]);
 */
 
 const getMessage = () => {
+    const randomCountry= random(countries);
+    const randomTravel = random(travelMethod);
+    const randomTime = random(time);
+
     return `You will travel to ${countries[randomCountry]}. You will travel by ${travelMethod[randomTravel]} in ${time[randomTime]}`;
 }
+
+const updateMessage = () => {
+    document.getElementById('message').innerText = getMessage();
+    document.getElementById('generateButton').innerText = 'New Travel Idea';
+}
+
+document.getElementById('generateButton').addEventListener('click', updateMessage);
 
 console.log(getMessage());
